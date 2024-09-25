@@ -1,15 +1,15 @@
 # LLVM Algebraic Optimization Passes
 
-This LLVM pass implements several algebraic optimizations to enhance performance by simplifying mathematical expressions during compilation. The following optimizations are included:
+These LLVM passes implement several algebraic optimizations to enhance performance by simplifying mathematical expressions during compilation. The following optimizations are included:
 
-1. **AddMulPasses**: These optimizations simplify expressions involving addition and multiplication by eliminating redundant operations. For example:
+1. **AddMulPass**: This optimization simplify expressions involving addition and multiplication by eliminating redundant operations. For example:
    - x + 0 = x
    - x * 1 = x
 
-2. **CommonSubexprPasses**: These passes identify and factorize common subexpressions to reduce redundancy in calculations. For example:
+2. **CommonSubexprPass**: This pass identify and factorize common subexpressions to reduce redundancy in calculations. For example:
    - x * y * z + x * a * z = x * z * (y + a)
 
-3. **PowerOptimizationPasses**: These optimizations transform exponentiation into multiplication for specific cases, improving performance. For example:
+3. **PowerOptimizationPass**: These optimization transform exponentiation into multiplication for specific cases, improving performance. For example:
    - x^4 = x * x * x * x
 
 ## Preparing the Environment
