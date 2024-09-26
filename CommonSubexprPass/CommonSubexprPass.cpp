@@ -53,7 +53,7 @@ namespace {
                                                 Z1 = Mul1->getOperand(2);
                                                 Y = Mul1->getOperand(1);
                                                 A = Mul2->getOperand(1);
-                                                std::cout << X1->getValue() << " " << Z1->getValue() << " " << Y->getValue() << " " << A->getValue() << "\n";
+                                                // std::cout << X1->getValue() << " " << Z1->getValue() << " " << Y->getValue() << " " << A->getValue() << "\n";
                                             }
                                         }
 
